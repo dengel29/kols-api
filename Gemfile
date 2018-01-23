@@ -4,7 +4,6 @@ ruby '2.3.4'
 gem 'devise'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
-gem 'pg'
 gem 'puma'
 gem 'rails', '5.1.4'
 gem 'redis'
@@ -13,12 +12,12 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'sass-rails'
-gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'pg', '< 1.0'
 end
 
 group :development, :test do
