@@ -12,7 +12,7 @@ class Api::V1::CampaignsController < Api::V1::BaseController
   private
 
   def set_campaign
-    @Campaign = Campaign.find(params[:id])
+    @campaign = Campaign.find(params[:id])
     authorize @Campaign  # For Pundit
   end
 
