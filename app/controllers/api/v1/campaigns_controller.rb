@@ -1,5 +1,5 @@
 class Api::V1::CampaignsController < Api::V1::BaseController
-  before_action :set_restaurant, only: [ :show ]
+  before_action :set_campaign, only: [ :show ]
 
   def show
   end
@@ -11,7 +11,7 @@ class Api::V1::CampaignsController < Api::V1::BaseController
 
   private
 
-  def set_restaurant
+  def set_campaign
     @Campaign = Campaign.find(params[:id])
     authorize @Campaign  # For Pundit
   end
