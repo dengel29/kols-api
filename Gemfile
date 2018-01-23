@@ -14,6 +14,7 @@ gem 'font-awesome-sass'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'webpacker'
+gem 'pundit'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
