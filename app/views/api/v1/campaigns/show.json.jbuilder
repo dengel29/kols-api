@@ -1,1 +1,1 @@
-json.extract! @Campaign, :title, :content, :user_id, :status
+json.extract! @campaign, :id, :title, :content, :user_id, :status

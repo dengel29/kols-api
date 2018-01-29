@@ -2,6 +2,8 @@ class Api::V1::CampaignsController < Api::V1::BaseController
   before_action :set_campaign, only: [ :show ]
 
   def show
+    # @campaign = set_campaign
+
   end
 
   def index
@@ -13,7 +15,7 @@ class Api::V1::CampaignsController < Api::V1::BaseController
 
   def set_campaign
     @campaign = Campaign.find(params[:id])
-    authorize @Campaign  # For Pundit
+    authorize @campaign  # For Pundit
   end
 
 end
